@@ -193,6 +193,28 @@
             <level value="WARN"/>
         </logger>
 
+        <!-- 额外 Log 控制台打印 -->
+        <logger name="com.alibaba.nacos.core">
+            <appender-ref ref="CONSOLE"/>
+            <level value="INFO"/>
+        </logger>
+        <logger name="com.alibaba.nacos.naming">
+            <appender-ref ref="CONSOLE"/>
+            <level value="INFO"/>
+        </logger>
+        <logger name="com.alibaba.nacos.config">
+            <appender-ref ref="CONSOLE"/>
+            <level value="INFO"/>
+        </logger>
+        <logger name="com.alibaba.nacos.address">
+            <appender-ref ref="CONSOLE"/>
+            <level value="INFO"/>
+        </logger>
+        <logger name="com.alibaba.nacos.client">
+            <appender-ref ref="CONSOLE"/>
+            <level value="INFO"/>
+        </logger>
+
     </springProfile>
 
     <logger name="com.alibaba.nacos.core.listener.StartingApplicationListener">
